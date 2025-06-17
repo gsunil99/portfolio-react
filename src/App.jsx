@@ -1,13 +1,13 @@
-import React from "react";
 import Navbar from "./components/Navbar/Navbar";
 import About from "./components/About/About";
 import Skills from "./components/Skills/Skills";
 import Experience from "./components/Experience/Experience";
-import Work from "./components/Work/Work";
 import Education from "./components/Education/Education";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import BlurBlob from './components/BlurBlob';
+import ProfessionalProjects from "./components/Projects/ProfessionalProjects";
+import PersonalProjects from "./components/Projects/PersonalProjects";
 
 const App = () => {
   return (
@@ -22,7 +22,8 @@ const App = () => {
         <About />
         <Skills />
         <Experience />
-        <Work />
+        <ProfessionalProjects />
+        <PersonalProjects />
         {/* <Education /> */}
         <Contact />
         <Footer />
