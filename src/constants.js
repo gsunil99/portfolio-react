@@ -55,6 +55,9 @@ import vpsLogo from './assets/education_logo/vps_logo.png';
 import iidealsLogo from './assets/project_logo/iideals.png';
 import peredealsLogo from './assets/project_logo/peredeals.png';
 import membershipLogo from './assets/project_logo/membership.png';
+import dataEntryLogo from './assets/project_logo/dataentry.png';
+import offsetmaxLogo from './assets/project_logo/offsetmax.png';
+import dropletLogo from './assets/project_logo/droplets.png';
 export const SkillsInfo = [
   {
     title: 'Frontend',
@@ -145,6 +148,8 @@ export const SkillsInfo = [
         "GraphDB",
         "Wordpress",
         "CMR",
+        "DataDog",
+        "Jest",
         "Split.io", 
         "Git",
         "GitLab",
@@ -237,93 +242,60 @@ export const SkillsInfo = [
     },
   ];
   
-  export const projects = [
+  export const profeesionalProjects = [
     {
       id: 0,
       title: "Peredeals - PEI",
       description:
         "Designed and developed the PEI Peredeals website using a full-stack architecture. Built a high-performance search and data retrieval system by leveraging React.js and Next.js (utilizing both SSR and CSR) for the frontend, and Nest.js, Node.js, OpenSearch, and GraphDB for the backend. Implemented advanced table functionalities including server-side pagination, dynamic filters, and sorting to efficiently manage and explore large volumes of deal data.",
       image: peredealsLogo,
-      tags: ["Javascript", "TypeScript", "React JS", "Next JS", "Nest JS","Node JS","Tailwind CSS",'Zustand', "CSR", "SSR", "OpenSearch", "GraphDB", "GitLab", "AWS"],
+      tags: ["Javascript", "TypeScript", "React JS", "Next JS", "Nest JS","Node JS","Tailwind CSS",'Zustand', 'DataDog', 'Jest', "CSR", "SSR", "OpenSearch", "GraphDB", "GitLab", "AWS"],
       webapp: "https://develop.peredeals.com",
     },
-    {
+     {
       id: 1,
-      title: "PEI Membership",
-      description:
-        "Designed and developed key features for the PEI Membership project using React.js, Next.js, PostgreSQL, and AWS. Implemented distinct user flows for membership registration and event sign-ups, ensuring a seamless and secure onboarding experience across different user types. Collaborated closely with product and design teams to streamline UX and integrated backend APIs for dynamic content delivery and user validation.",
-      image: membershipLogo,
-      tags: ["Javascript", "TypeScript", "React JS", "Next JS","PostgreSQL","Tailwind CSS","React Query","Zustand","GitLab", "AWS"],
-      webapp: "https://stage.peimembership.com/",
-    },
-    {
-      id: 2,
       title: "II deals - PEI",
       description:
         "Architected and implemented the PEI IIdeals platform, delivering comprehensive investor intelligence and institutional tracking. Developed a dynamic, SEO-optimized frontend using React.js and Next.js (leveraging both SSR and CSR), and built scalable backend services with Nest.js, Node.js, OpenSearch, and GraphDB, tailored to support complex search queries and relationship-driven data models.",
       image: iidealsLogo,
-      tags: ['Wordpress','CMR',"Javascript", "TypeScript", "React JS", "Next JS", "Nest JS","Node JS","CSR", "SSR", "OpenSearch", "GraphDB", "GitLab", "Docker", "AWS","Tailwind CSS",'Zustand', ],
+      tags: ['Wordpress','CMR',"Javascript", "TypeScript", "React JS", "Next JS", "Nest JS","Node JS","CSR", "SSR",'DataDog', "OpenSearch", "GraphDB", "GitLab", "Docker", "AWS","Tailwind CSS",'Zustand', ],
       webapp: "https://develop.infrastructureinvestordeals.com",
     },
-    
+    {
+      id: 2,
+      title: "PEI Membership",
+      description:
+        "Designed and developed key features for the PEI Membership project using React.js, Next.js, PostgreSQL, and AWS. Implemented distinct user flows for membership registration and event sign-ups, ensuring a seamless and secure onboarding experience across different user types. Collaborated closely with product and design teams to streamline UX and integrated backend APIs for dynamic content delivery and user validation.",
+      image: membershipLogo,
+      tags: ["Javascript", "TypeScript", "React JS", "Next JS","PostgreSQL","Tailwind CSS","React Query","Zustand","GitLab", "AWS",'DataDog', 'Jest'],
+      webapp: "https://stage.peimembership.com/",
+    }, 
     {
       id: 3,
-      title: "Email Validator NPM Package",
+      title: "Data Entry Application for PERE Deals and II Deals",
       description:
-        "An efficient and customizable NPM package for validating email addresses. Built using React.js and Node.js, it provides robust validation features to help developers ensure that email inputs meet required formats and standards.",
-      image: iidealsLogo,
-      tags: ["React JS", "Node.js", "NPM", "Validation"],
-      github: "https://github.com/codingmastr/cmtk-email-validator",
-      webapp: "https://www.npmjs.com/package/cmtk-email-validator",
+        "The Data Entry Application is a web-based tool built using Next.js and React.js to enable seamless ingestion of structured data into GraphDB. It allows internal pei users to upload Excel files, which are parsed, validated, and transformed into RDF triples for storage in the knowledge graph. This application serves as a key data source for both PERE Deals and II Deals platforms, supporting consistent and semantically enriched data across systems. Leveraging the performance of Next.js and the flexibility of React.js, it ensures efficient data processing and a smooth user experience.",
+      image: dataEntryLogo,
+      tags: ["React JS", "Node.js", "NPM", "Validation","GraphDB", "Next.js","OpenSearch","Docker"],
+      webapp: "https://data-entry-fusion.dev.pei-services.com",
     },
     {
       id: 4,
-      title: "Task Reminder Chrome Extension Tool",
+      title: "OffsetMax - Climate Connect Digital",
       description:
-        "A productivity-boosting Chrome extension designed to help users manage and remember their daily tasks. Built using JavaScript, it offers a simple interface with reminders and task notifications to keep users on track.",
-      image: iidealsLogo,
-      tags: ["JavaScript", "Chrome Extension", "HTML", "CSS"],
-      github: "https://github.com/codingmastr/Task-Reminder-Tool",
-      webapp: "chrome://extensions/?id=kngheeibjnnidhfoomkpnbeghackheci",
+        "OffsetMax is a SaaS platform for inventory and risk management, enabling the trading and delivery of carbon credits and futures across major registries like VCS and CAR, as well as products such as GEO, N-GEO, and C-GEO. I contributed to building RESTful APIs using Node.js, Java (Spring Boot), and GCP to support onboarding and data operations. I implemented an “Add to Basket” feature using React.js, Next.js, and Express.js, enhancing user engagement and boosting sales. I also helped architect a serverless carbon project management module using AWS Chalice, GraphQL, and MongoDB.",
+      image: offsetmaxLogo,
+      tags: ["JavaScript", "Typescript", "AWS-chalice","Node JS","Express Js","React JS","Python","Flask","Email- SignUp","MongoDB","GraphQL"],
+      webapp: "https://climateconnect.digital/products/",
     },
     {
       id: 5,
-      title: "Webverse Digital",
+      title: "Droplets Application - Larsen & Toubro Infotech",
       description:
-        "The official website for Webverse Digital, a creative digital marketing agency. Built using HTML, CSS, and JavaScript, it features visually appealing animations and a clean design to showcase the agency's services.",
-      image: iidealsLogo,
-      tags: ["HTML", "CSS", "JavaScript", "Framer Motion"],
-      github: "https://github.com/codingmastr/Webverse-Digital",
-      webapp: "https://webversedigital.com/",
-    },
-    {
-      id: 6,
-      title: "Coding Master",
-      description:
-        "An ed-tech platform where users can access tech and coding-related blogs, notes, interview questions, e-books, and premium content with payment integration. Built with full-stack technologies for a seamless learning experience.",
-      image: iidealsLogo,
-      tags: ["React JS", "Node.js", "MongoDB", "Express", "Payment Integration"],
-      github: "https://codingmasterweb.in/",
-      webapp: "https://codingmasterweb.in/",
-    },
-    {
-      id: 7,
-      title: "Image Search App",
-      description:
-        "A React.js-based image search application that allows users to search and download high-quality images from the web. Built using external APIs to ensure a vast library of results for various queries.",
-      image: iidealsLogo,
-      tags: ["React JS", "API", "Search Feature", "CSS", "Javascript"],
-      github: "https://github.com/codingmastr/Image-Search-App",
-      webapp: "https://imagsearch.netlify.app/",
-    },
-    {
-      id: 8,
-      title: "Image Background Remover",
-      description:
-        "An efficient background removal app built with React.js and API integration. Users can upload any image, remove the background, and download the transparent version for further use.",
-      image: iidealsLogo,
-      tags: ["React JS", "API", "Image Processing", "HTML", "CSS", "Javascript"],
-      github: "https://github.com/codingmastr/Image-Background-Remover",
-      webapp: "https://removeyourbg.netlify.app/",
-    },
+        "It is a micro savings apps that identify small savings opportunities within your existing budget and automatically sweep money into a savings account. Developed Backend RESTFUL API Microservices such as user microservice, create goal microservice and transaction microservice using Java, Maven, Postman, Apache server, Spring-Boot and PostgreSQL.",
+      image: dropletLogo,
+      tags: ["Java", "Spring Boot", "PostgreSQL", "RESTful API", "Maven", "Postman", "Apache Server","HTML", "CSS", "Python", "Django"],
+      github: "https://github.com/gsunil99/Droplets",
+      
+    }
   ];  
