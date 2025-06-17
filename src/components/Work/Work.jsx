@@ -95,11 +95,20 @@ const Work = ({ title, description, projects }) => {
 
                         <div className="flex flex-col">
                             <div className="w-full flex justify-center bg-gray-900 px-4">
-                                <img
-                                    src={selectedProject.image}
-                                    alt={selectedProject.title}
-                                    className="lg:w-full max-h-44 sm:max-h-[400px] object-contain rounded-xl shadow-2xl"
-                                />
+                                {selectedProject.video ?
+                                    <video
+                                        src={selectedProject.video}
+                                        poster={selectedProject.image}
+                                        controls
+                                        className="lg:w-full max-h-44 sm:max-h-[400px] object-contain rounded-xl shadow-2xl"
+                                    />
+                                    :
+                                    <img
+                                        src={selectedProject.image}
+                                        alt={selectedProject.title}
+                                        className="lg:w-full max-h-44 sm:max-h-[400px] object-contain rounded-xl shadow-2xl"
+                                    />
+                                }
                             </div>
                             <div className="lg:p-8 p-6">
                                 <h3 className="lg:text-3xl font-bold text-white mb-4 text-md">
