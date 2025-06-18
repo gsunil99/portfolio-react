@@ -38,7 +38,7 @@ const Footer = () => {
         {/* Social Media Icons - Responsive */}
         <div className="flex flex-wrap justify-center space-x-4 mt-6">
           {[
-            { icon: <FaPhoneAlt />, link: "tel:+918277434979" },
+            { icon: <FaPhoneAlt className="w-4 h-4"/>, link: "tel:+918277434979" },
             { icon: <FaTwitter />, link: "https://twitter.com/gsunil1999" },
             { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/gsunil99" },
             { icon: <FaInstagram />, link: "https://www.instagram.com/gsunil.99" },
@@ -53,7 +53,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="text-xl hover:text-purple-500 transition-transform transform hover:scale-110"
             >
-              {item.icon}
+              {React.cloneElement(item.icon, { className: "w-4 h-4 lg:w-8 lg:h-8" })}
             </a>
           ))}
         </div>
