@@ -70,6 +70,13 @@ import blogPlatformLogo from './assets/project_logo/blogplatform.png';
 import electrodealLogo from './assets/project_logo/electrodeal.png';
 import redmiLogo from './assets/project_logo/redmi.png';
 import blogBackendLogo from './assets/project_logo/blogbackend.png';
+import triangleLogo from './assets/project_logo/triangle.png';
+import birthdayLogo from './assets/project_logo/birthday.png';
+import cashLogo from './assets/project_logo/cash.png';
+import bananaLogo from './assets/project_logo/banana.png';
+import palinLogo from './assets/project_logo/palin.png';
+import portfolioLogo from './assets/project_logo/portfolio.png'
+import hotstarLogo from './assets/project_logo/hotstar.png'
 
 export const SkillsInfo = [
   {
@@ -169,6 +176,7 @@ export const experiences = [
       "Docker",
       "AWS",
       "PostgreSQL",
+      "Zephr",
     ],
   },
   {
@@ -212,6 +220,11 @@ export const experiences = [
       "PostgreSQL",
       "HTML",
       "CSS",
+      "RESTful API",
+      "Maven",
+      "Postman",
+      "Apache Server",
+      "JWT"
     ],
   },
 ];
@@ -359,12 +372,32 @@ export const personalProjects = [
     id: 0,
     title: "Instagram Clone",
     description:
-      "Created a social media application with features like Send Direct messages, Create Post, Comment on Post, Update Post, profile and other basic features.",
+      "Developed a full-featured social media application with core functionalities such as creating and updating posts, commenting, sending direct messages, and managing user profiles. The platform allows users to interact in real-time, enhancing engagement through direct communication and content sharing. Implemented essential features like user authentication, post visibility, and profile customization, along with a clean and intuitive UI. This project demonstrates a solid understanding of full-stack development, real-time interactions, and scalable feature design.",
     image: instacloneLogo,
     tags: ["Python", "Django", "Crud", "SQL", "Mongodb", "PythonAnywhere", "Direct messages", 'HTML', 'CSS'],
     webapp: "https://sunilinstagram.pythonanywhere.com/",
     github: "https://github.com/gsunil99/insta_clone",
     video: "https://user-images.githubusercontent.com/56781242/229135711-acb54bcf-4a13-40a9-8138-19c0101747c4.mp4"
+  },
+    {
+    id: 0,
+    title: "My Portfolio",
+    description:
+      "Developed a responsive personal portfolio website using React and Tailwind CSS to showcase projects, technical skills, and professional experience. The site features a clean, modern design with smooth navigation and mobile-friendly layout. Implemented reusable components and optimized performance for fast loading. This portfolio serves as a central hub for demonstrating development capabilities and making a strong first impression with potential employers or collaborators.",
+    image: portfolioLogo,
+    tags: ['React JS','HTML', 'CSS', 'JavaScript','Tailwind CSS','Vite','Tilt','Netlify'],
+    webapp: "https://gsunil.netlify.app",
+    github: "https://github.com/gsunil99/portfolio-react"
+  },
+    {
+    id: 0,
+    title: "Hotstar Free watch",
+    description:
+      "Built in 2023, HotstarCricketStream is a utility tool designed to provide uninterrupted access to live cricket matches on Hotstar for free. The script automatically deletes cookies and reloads the page every 5 minutes, bypassing session restrictions to ensure a smooth and consistent streaming experience. This project demonstrates practical knowledge of browser automation and session handling, offering a hands-on solution to enhance real-time content accessibility.",
+    image: hotstarLogo,
+    tags: ['Python','Selenium','Chrome extension','Hotstar','Free watch'],
+    webapp: "https://www.linkedin.com/posts/gsunil99_hotstarbugunveiled-cricketrevolution-unlimitedentertainment-activity-7076846422565785600-XJxe?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAACW3Cz4BkT7LNEkaeXRW4iDSXlxSeE8Y-IY",
+    github: "https://github.com/gsunil99/hotstarfreewatch",
   },
   {
     id: 0,
@@ -377,18 +410,7 @@ export const personalProjects = [
     github: "https://github.com/gsunil99/todo-fe",
     video: "https://github.com/gsunil99/canvas-game/assets/56781242/46970358-c805-40ed-88e9-69641410a479"
   },
-  {
-    id: 0,
-    title: "Real Time Chat Application",
-    description:
-      "The real-time group chat application provides users with a platform to engage in live conversations and collaborate in real-time. The frontend is built using HTML, CSS, and JavaScript, while the backend is deployed using AWS Chalice, enabling WebSocket communication for instant message updates.",
-    image: realTimeChatLogo,
-    tags: ["JavaScript", "HTML", "CSS", "AWS-Chalice", "WebSocket", "Real-Time Chat", "Dyanamodb"],
-    webapp: "https://gsunil-chat.netlify.app",
-    github: "https://github.com/gsunil99/real-time-chat",
-    video: "https://user-images.githubusercontent.com/56781242/226248049-9358d2a1-b966-49c7-9747-6ab5398eee2c.mp4"
-  },
-    
+
   {
     id: 0,
     title: "Todo Application",
@@ -409,16 +431,7 @@ export const personalProjects = [
     webapp: "https://csdept.pythonanywhere.com",
     github: "https://github.com/gsunil99/department-blog-django"
   },
-  {
-    id: 0,
-    title: "ElectroDeal",
-    description:
-      "Created Ecommerce website to sell and buy electronics devices with features like order tracking, paytm payment mode",
-    image: electrodealLogo,
-    tags: ["Python", "Django", "HTML", "CSS", "Bootstrap", "Paytm Payment Gateway"],
-    webapp: "https://sunil99.pythonanywhere.com/shop",
-  },
-  {
+    {
     id: 0,
     title: "Mi Clone",
     description:
@@ -430,6 +443,26 @@ export const personalProjects = [
   },
   {
     id: 0,
+    title: "Real Time Chat Application",
+    description:
+      "The real-time group chat application provides users with a platform to engage in live conversations and collaborate in real-time. The frontend is built using HTML, CSS, and JavaScript, while the backend is deployed using AWS Chalice, enabling WebSocket communication for instant message updates.",
+    image: realTimeChatLogo,
+    tags: ["JavaScript", "HTML", "CSS", "AWS-Chalice", "WebSocket", "Real-Time Chat", "Dyanamodb"],
+    webapp: "https://gsunil-chat.netlify.app",
+    github: "https://github.com/gsunil99/real-time-chat",
+    video: "https://user-images.githubusercontent.com/56781242/226248049-9358d2a1-b966-49c7-9747-6ab5398eee2c.mp4"
+  },
+  {
+    id: 0,
+    title: "ElectroDeal",
+    description:
+      "Created Ecommerce website to sell and buy electronics devices with features like order tracking, paytm payment mode",
+    image: electrodealLogo,
+    tags: ["Python", "Django", "HTML", "CSS", "Bootstrap", "Paytm Payment Gateway"],
+    webapp: "https://sunil99.pythonanywhere.com/shop",
+  },
+  {
+    id: 0,
     title: "Blog Backend",
     description:
       "Implemented the complete set of RESTful API services for a blog application using Spring Boot, ensuring a modular and scalable architecture. Integrated Spring Security with JWT-based authentication for secure user access and role-based authorization. Utilized Spring Data JPA (Hibernate) for efficient database interactions with a MySQL backend. Implemented features like pagination, sorting, and global exception handling to enhance API usability and robustness. APIs were tested and documented using Swagger UI, enabling easy integration and validation of endpoints.",
@@ -437,4 +470,55 @@ export const personalProjects = [
     tags: ["Java", "Spring Boot", "MySQL", "RESTful API", "Spring Security", "JWT", "Swagger UI", "Hibernate"],
     github: "https://github.com/gsunil99/BlogApplication"
   },
+  {
+    id: 0,
+    title: "Fun with Triangles",
+    description:
+      "Developed an educational website focused on helping users learn and understand the properties of triangles. The platform includes interactive explanations of different types of triangles, their angles, formulas, and real-world applications. Designed with a user-friendly interface to make geometry concepts accessible for students and beginners. The website aims to simplify learning through visual aids, examples, and easy-to-follow content, making it a valuable tool for academic support.",
+    image: triangleLogo,
+    tags: ["HTML", "CSS", "JavaScript", "Bootstrap", "Responsive Design", "Educational Website"],
+    webapp: "https://gsunil-triangles.netlify.app",
+    github: "https://github.com/gsunil99/triangles"
+  },
+  {
+    id: 0,
+    title: "Lucky Birthday",
+    description:
+      "Created a fun and interactive website that helps users check whether their birthday is lucky based on numerology-inspired logic. Users can enter their birthdate and a lucky number, and the site performs calculations to determine if the date aligns with the given number. Designed with a clean and engaging UI to make the experience enjoyable and easy to use. This project combines basic form handling, input validation, and logic implementation to deliver a simple yet entertaining tool for users",
+    image: birthdayLogo,
+    tags: ["HTML", "CSS", "JavaScript", "Bootstrap", "Responsive Design", "Fun Project"],
+    webapp: "https://gsunil-birthday-lucky.netlify.app",
+    github: "https://github.com/gsunil99/birthday-lucky"
+  },
+    {
+    id: 0,
+    title: "Cash Register Manager",
+    description:
+      "Developed a Cash Register Manager web application that helps users calculate the optimal way to return change using the minimum number of currency notes. Users can input the bill amount and the cash given, and the application computes the exact change along with a breakdown of notes required. Implemented efficient logic to minimize note count and enhance accuracy. Designed with a user-friendly interface, this tool simplifies cash transactions and is especially useful for retail and small business scenarios.",
+    image: cashLogo,
+    tags: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Responsive Design', 'Cash Management'],
+    webapp: "https://gsunil-cash-register.netlify.app",
+    github: "https://github.com/gsunil99/cash-register"
+  },
+  {
+    id: 0,
+    title: "Minion Translator",
+    description:
+      "Created a playful Minion Translator web application that converts English text into Banana language, the quirky and fun gibberish spoken by Minions. Designed for entertainment, the app allows users to input any sentence and instantly see its translation in the humorous Minion dialect. Built with a clean and interactive UI, the translator provides a light-hearted user experience, making language learning and exploration fun. Ideal for fans of the Despicable Me franchise and anyone looking for a good laugh!",
+    image: bananaLogo,
+    tags: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Responsive Design'],
+    webapp: "https://gsunil-banana-speak.netlify.app",
+    github: "https://github.com/gsunil99/banana-speak"
+  },
+  {
+    id: 0,
+    title: "Fun Palindrome",
+    description:
+      "Developed an interactive Palindrome Birthdate Checker website that lets users check whether their birthdate is a palindrome. If not, the application calculates and displays the next nearest palindrome date. Additionally, it shows the total number of days the user has been alive, the days remaining until their next birthday, and a fun breakdown of their zindagi in hours, minutes, and seconds — presented in a relatable, conversational tone. This project combines date manipulation, user-friendly UI, and engaging logic to deliver a personalized and enjoyable experience.",
+    image: palinLogo,
+    tags: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'Responsive Design','Google Translate'],
+    webapp: "https://gsunil-fun-palindrome.netlify.app",
+    github: "https://github.com/gsunil99/palindrome"
+  },
+  
 ];
