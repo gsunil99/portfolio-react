@@ -1,6 +1,6 @@
 import React from "react";
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
-
+import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram, FaYoutube, FaWhatsapp, FaPhone, FaVoicemail, FaPhoneAlt, FaMailBulk, FaMailchimp } from "react-icons/fa";
+import { MdOutlineEmail } from "react-icons/md";
 const Footer = () => {
   // Smooth scroll function
   const handleScroll = (sectionId) => {
@@ -22,8 +22,8 @@ const Footer = () => {
             { name: "About", id: "about" },
             { name: "Skills", id: "skills" },
             { name: "Experience", id: "experience" },
-            { name: "Projects", id: "projects" },
-            { name: "Education", id: "education" },
+            { name: "Professional Projects", id: "professional-projects" },
+            { name: "Personal Projects", id: "personal-projects" },
           ].map((item, index) => (
             <button
               key={index}
@@ -38,11 +38,12 @@ const Footer = () => {
         {/* Social Media Icons - Responsive */}
         <div className="flex flex-wrap justify-center space-x-4 mt-6">
           {[
-            { icon: <FaFacebook />, link: "https://www.facebook.com/tarun.kaushik.3511041/" },
-            { icon: <FaTwitter />, link: "https://twitter.com/CodingMaster6?s=09" },
-            { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/tarun-kaushik-553b441a4" },
-            { icon: <FaInstagram />, link: "https://www.instagram.com/coding_.master/" },
-            { icon: <FaYoutube />, link: "https://www.youtube.com/codingmasteryt" },
+            { icon: <FaPhoneAlt />, link: "tel:+918277434979" },
+            { icon: <FaTwitter />, link: "https://twitter.com/gsunil1999" },
+            { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/gsunil99" },
+            { icon: <FaInstagram />, link: "https://www.instagram.com/gsunil.99" },
+            { icon: <FaWhatsapp />, link: "https://wa.me/+918277434979" },
+            { icon: <MdOutlineEmail />, link: "mailto:gsunil99920@gmail.com" },
             
           ].map((item, index) => (
             <a
